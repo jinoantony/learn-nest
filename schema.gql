@@ -12,3 +12,7 @@ type User {
 type Query {
   users: [User!]!
 }
+
+type Mutation {
+  createUser(age: Int!, name: String!): User!
+}
